@@ -38,7 +38,7 @@
                     // 如果limit > 1: 返回数组
                     if (this.item.attr && this.item.attr.limit > 1) {
                         this.item.value = uploadList.map(item => item.name)
-                    } else {
+                    } else if (uploadList.length > 0) {
                         this.item.value = uploadList[0].name
                     }
                 },

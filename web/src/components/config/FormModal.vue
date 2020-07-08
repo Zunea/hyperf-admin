@@ -6,18 +6,18 @@
                     <el-option v-for="(option, index) in groupSelectList" :label="option.label" :value="option.value" :key="index"></el-option>
                 </el-select>
             </el-form-item>
-            <el-form-item :label="$i18n.t('CONFIG_NAME')" required :error="errors.name">
-                <el-input v-model="mdl.name" :placeholder="$i18n.t('PLEASE_INPUT', { value: $i18n.t('CONFIG_NAME') })"></el-input>
-            </el-form-item>
             <el-form-item :label="$i18n.t('CONFIG_TITLE')" required :error="errors.title">
                 <el-input v-model="mdl.title" :placeholder="$i18n.t('PLEASE_INPUT', { value: $i18n.t('CONFIG_TITLE') })"></el-input>
             </el-form-item>
+            <el-form-item :label="$i18n.t('CONFIG_NAME')" required :error="errors.name">
+                <el-input v-model="mdl.name" :placeholder="$i18n.t('PLEASE_INPUT', { value: $i18n.t('CONFIG_NAME') })"></el-input>
+            </el-form-item>
             <el-form-item :label="$i18n.t('CONFIG_TYPE')" required :error="errors.type">
                 <div style="width: 100%">
-                    <el-select v-model="mdl.type" :value="mdl.type" :placeholder="$i18n.t('PLEASE_SELECT', { value: $i18n.t('CONFIG_TYPE') })" style="width: 69%" @change="mdl.attr = {}">
+                    <el-select v-model="mdl.type" :value="mdl.type" :placeholder="$i18n.t('PLEASE_SELECT', { value: $i18n.t('CONFIG_TYPE') })" style="width: 68%" @change="mdl.attr = {}">
                         <el-option v-for="(option, index) in $store.getters.options.AdminConfigTypeList" :label="option.label" :value="option.value" :key="index"></el-option>
                     </el-select>
-                    <el-button icon="el-icon-more" style="width: 29%" @click="onOpenAttributesConfig(mdl)"></el-button>
+                    <el-button icon="el-icon-more" style="width: 29%;margin-left: 5px;" @click="onOpenAttributesConfig(mdl)"></el-button>
                 </div>
             </el-form-item>
             <el-form-item :label="$i18n.t('CONFIG_OPTIONS')" :error="errors.options">
@@ -51,7 +51,7 @@
                     <el-button slot="reference" type="primary" :loading="submitLogin" :disabled="btnDisable">{{ $i18n.t('SUBMIT') }}</el-button>
                 </el-popconfirm>
                 <el-button v-else @click="submitForm" type="primary" :loading="submitLogin" :disabled="btnDisable">{{ $i18n.t('SUBMIT') }}</el-button>
-                <el-button @click="handleCloseDrawer">{{ $i18n.t('CANCEL') }}</el-button>
+                <el-button @click="handleCloseDrawer" style="margin-left: 10px;">{{ $i18n.t('CANCEL') }}</el-button>
             </el-form-item>
             <el-form-item v-if="errorMessage !== ''">
                 <Alert type="error" show-icon>{{ errorMessage }}</Alert>
@@ -223,11 +223,11 @@
 </script>
 
 <style lang="less" scoped>
-.body {
-    padding-right: 25px;
-    width: 100%;
-}
-/deep/ .el-checkbox__label {
-    font-size: 12px;
-}
+    .body {
+        padding-right: 25px;
+        width: 100%;
+    }
+    /deep/ .el-checkbox__label {
+        font-size: 12px;
+    }
 </style>
