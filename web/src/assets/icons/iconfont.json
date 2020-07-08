@@ -1,0 +1,135 @@
+{
+  "id": "1867806",
+  "name": "hyperf-admin",
+  "font_family": "element-icons",
+  "css_prefix_text": "el-icon-custom-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "10204833",
+      "name": "disable",
+      "font_class": "disable",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "584065",
+      "name": "退出",
+      "font_class": "logout",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "4631594",
+      "name": "修改密码",
+      "font_class": "change",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "11810481",
+      "name": "语言",
+      "font_class": "globalization",
+      "unicode": "e685",
+      "unicode_decimal": 59013
+    },
+    {
+      "icon_id": "400389",
+      "name": "close",
+      "font_class": "close",
+      "unicode": "e684",
+      "unicode_decimal": 59012
+    },
+    {
+      "icon_id": "5776870",
+      "name": "edit",
+      "font_class": "edit",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "4605457",
+      "name": "add",
+      "font_class": "add",
+      "unicode": "e722",
+      "unicode_decimal": 59170
+    },
+    {
+      "icon_id": "13087865",
+      "name": "click",
+      "font_class": "click",
+      "unicode": "e7cd",
+      "unicode_decimal": 59341
+    },
+    {
+      "icon_id": "11520228",
+      "name": "接口",
+      "font_class": "resources",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "1311996",
+      "name": "设置",
+      "font_class": "setting1",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "836483",
+      "name": "dashboard",
+      "font_class": "dashboard",
+      "unicode": "e6b6",
+      "unicode_decimal": 59062
+    },
+    {
+      "icon_id": "6986754",
+      "name": "dashboard",
+      "font_class": "dashboard1",
+      "unicode": "e88b",
+      "unicode_decimal": 59531
+    },
+    {
+      "icon_id": "1294069",
+      "name": "设置",
+      "font_class": "setting",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "3248639",
+      "name": "管理员",
+      "font_class": "guanliyuan",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "3590935",
+      "name": "管理员",
+      "font_class": "admin-user",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "7391802",
+      "name": "角色设置",
+      "font_class": "jiaoseshezhi-",
+      "unicode": "e6ac",
+      "unicode_decimal": 59052
+    },
+    {
+      "icon_id": "10149459",
+      "name": "角色管理",
+      "font_class": "role",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "7155218",
+      "name": "菜单",
+      "font_class": "menu",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    }
+  ]
+}
