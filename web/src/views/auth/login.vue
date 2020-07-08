@@ -21,7 +21,7 @@
         name: 'login',
         data () {
             return {
-                username: 'default',
+                username: 'admin',
                 password: '123456',
                 loginBtnLoading: false
             }
