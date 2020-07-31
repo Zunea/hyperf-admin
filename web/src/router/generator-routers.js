@@ -1,11 +1,10 @@
 import * as loginService from '@/api/default/account'
-import { BasicLayout, RouteView } from '@/layouts'
+import { BasicLayout, RouteView } from '@/layout'
+
 // 路由表
 const constantRouterComponents = {
     BasicLayout,
-    RouteView,
     'dashboard/workplace': () => import('@/views/dashboard/workplace'),
-    'dashboard/workplace2': () => import('@/views/dashboard/workplace2'),
     // 后台管理模块相关路由组件
     'system/setting': () => import('@/views/system/setting'),
     'system/config': () => import('@/views/system/config'),
@@ -13,8 +12,6 @@ const constantRouterComponents = {
     'system/group': () => import('@/views/system/group'),
     'system/menu': () => import('@/views/system/menu'),
     'system/resource': () => import('@/views/system/resource')
-    // 业务组件
-    // ...
 }
 
 // 404路由
@@ -30,7 +27,7 @@ const rootRouter = {
     name: 'index',
     path: '',
     component: 'BasicLayout',
-    redirect: '/dashboard',
+    redirect: '/dashboard/workplace',
     meta: { title: 'home' },
     children: []
 }

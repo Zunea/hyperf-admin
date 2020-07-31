@@ -57,7 +57,8 @@ class Constants
         '/admin/account/info',
         '/admin/account/menu',
         '/admin/account/resource',
-        '/admin/account/option'
+        '/admin/account/option',
+        '/admin/account/password',
     ];
 
     /**

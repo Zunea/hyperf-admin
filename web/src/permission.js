@@ -4,7 +4,7 @@ import { i18nRender } from '@/locales'
 import store from './store'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
-import { ACCESS_TOKEN } from '@/configs/constants'
+import { ACCESS_TOKEN } from '@/config/constants'
 
 NProgress.configure({ showSpinner: false })
 
@@ -46,6 +46,13 @@ router.beforeEach((to, from, next) => {
             })
         })
     } else {
+        // 增加tab多页签数据
+        store.dispatch('PUSH_ROUTER', {
+            fullPath: to.fullPath,
+            meta: to.meta,
+            name: to.name,
+            path: to.path
+        })
         next()
     }
 })

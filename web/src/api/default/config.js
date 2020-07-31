@@ -2,7 +2,7 @@ import { axios } from '@/utils/request'
 
 export function getConfig (params) {
     return axios({
-        url: 'config',
+        url: 'admin/config',
         method: 'get',
         params
     })
@@ -10,7 +10,7 @@ export function getConfig (params) {
 
 export function addConfig (data) {
     return axios({
-        url: 'config',
+        url: 'admin/config',
         method: 'post',
         data
     })
@@ -18,7 +18,7 @@ export function addConfig (data) {
 
 export function updateConfig (id, data) {
     return axios({
-        url: `config/${id}`,
+        url: `admin/config/${id}`,
         method: 'put',
         data
     })
@@ -26,28 +26,28 @@ export function updateConfig (id, data) {
 
 export function deleteConfig (ids) {
     return axios({
-        url: `config/${ids}`,
+        url: `admin/config/${ids}`,
         method: 'delete'
     })
 }
 
 export function enableConfig (ids) {
     return axios({
-        url: `config/enable/${ids}`,
+        url: `admin/config/enable/${ids}`,
         method: 'put'
     })
 }
 
 export function disableConfig (ids) {
     return axios({
-        url: `config/disable/${ids}`,
+        url: `admin/config/disable/${ids}`,
         method: 'put'
     })
 }
 
 export function saveConfig (group, data) {
     return axios({
-        url: `config/save/${group}`,
+        url: `admin/config/save/${group}`,
         method: 'put',
         data
     })

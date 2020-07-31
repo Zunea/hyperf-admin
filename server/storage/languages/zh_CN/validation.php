@@ -78,5 +78,12 @@ return [
             'tips'   => ['max' => $max],
             'format' => ['max' => $max],
         ]
+    ],
+    'Account'   => [
+        'ChangePasswordRequest' => [
+            'old_password'              => ['required' => $required_input, 'alpha_dash' => '只允许字母和数字，以及破折号和下划线', 'between' => '密码格式错误[:between长度]'],
+            'new_password'              => ['required' => $required_input, 'alpha_dash' => '只允许字母和数字，以及破折号和下划线', 'between' => '密码格式错误[:between长度]', 'confirmed' => '新密码和确认密码必须一致'],
+            'new_password_confirmation' => ['required' => $required_input],
+        ]
     ]
 ];

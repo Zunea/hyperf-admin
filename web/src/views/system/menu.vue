@@ -23,7 +23,7 @@
                         <i :class="scope.row.type === 1 ? scope.row.icon: 'el-icon-thumb'" style="font-size: 13px;padding-right: 4px;"></i>
                         {{ scope.row.type === 1 ? $i18n.t('menu.' + scope.row.name) : scope.row.path }}
                         <div class="right-button">
-                            <el-link v-auth="'add'" v-show="scope.row.type === 1" icon="el-icon-custom-add" @click="onAdd(scope.row.id)" style="margin-right: 6px"></el-link>
+                            <el-link v-auth="'add'" v-show="scope.row.type === 1" icon="el-icon-custom-add-big" @click="onAdd(scope.row.id)" style="margin-right: 6px"></el-link>
                             <el-link v-if="!scope.row.is_system" v-auth="'update'" icon="el-icon-custom-edit" @click="onUpdate(scope.row)" style="margin-right: 6px"></el-link>
                             <el-link v-if="!scope.row.is_system" v-auth="'delete'" icon="el-icon-custom-close" @click="onDelete(scope.row)"></el-link>
                         </div>

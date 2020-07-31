@@ -22,7 +22,7 @@
 
 <script>
     import { upload } from '@/api/default/upload'
-    import configs from '@/configs'
+    import configs from '@/config'
 
     export default {
         name: 'sub-upload',

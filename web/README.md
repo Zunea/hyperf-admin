@@ -9,7 +9,7 @@
 yarn install
 
 # serve with hot reload at localhost:8088
-yarn run serve
+yarn run dev
 
 # build for production with minification
 yarn build

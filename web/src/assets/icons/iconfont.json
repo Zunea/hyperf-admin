@@ -1,37 +1,37 @@
 {
-  "id": "1867806",
-  "name": "hyperf-admin",
+  "id": "1973154",
+  "name": "indonesia-cash",
   "font_family": "element-icons",
   "css_prefix_text": "el-icon-custom-",
-  "description": "",
+  "description": "印尼互金项目后台",
   "glyphs": [
     {
-      "icon_id": "10204833",
-      "name": "disable",
-      "font_class": "disable",
-      "unicode": "e620",
-      "unicode_decimal": 58912
+      "icon_id": "14629302",
+      "name": "add-big",
+      "font_class": "add-big",
+      "unicode": "e639",
+      "unicode_decimal": 58937
     },
     {
-      "icon_id": "584065",
-      "name": "退出",
-      "font_class": "logout",
-      "unicode": "e659",
-      "unicode_decimal": 58969
+      "icon_id": "9456985",
+      "name": "md-create",
+      "font_class": "md-create",
+      "unicode": "e6d9",
+      "unicode_decimal": 59097
     },
     {
-      "icon_id": "4631594",
-      "name": "修改密码",
-      "font_class": "change",
-      "unicode": "e653",
-      "unicode_decimal": 58963
+      "icon_id": "9457421",
+      "name": "ios-call",
+      "font_class": "ios-call",
+      "unicode": "e708",
+      "unicode_decimal": 59144
     },
     {
-      "icon_id": "11810481",
-      "name": "语言",
-      "font_class": "globalization",
-      "unicode": "e685",
-      "unicode_decimal": 59013
+      "icon_id": "11103158",
+      "name": "ios-chatbubbles",
+      "font_class": "ios-chatbubbles",
+      "unicode": "e7a4",
+      "unicode_decimal": 59300
     },
     {
       "icon_id": "400389",
@@ -41,39 +41,11 @@
       "unicode_decimal": 59012
     },
     {
-      "icon_id": "5776870",
-      "name": "edit",
-      "font_class": "edit",
-      "unicode": "e657",
-      "unicode_decimal": 58967
-    },
-    {
-      "icon_id": "4605457",
-      "name": "add",
-      "font_class": "add",
-      "unicode": "e722",
-      "unicode_decimal": 59170
-    },
-    {
-      "icon_id": "13087865",
-      "name": "click",
-      "font_class": "click",
-      "unicode": "e7cd",
-      "unicode_decimal": 59341
-    },
-    {
-      "icon_id": "11520228",
-      "name": "接口",
-      "font_class": "resources",
-      "unicode": "e638",
-      "unicode_decimal": 58936
-    },
-    {
-      "icon_id": "1311996",
-      "name": "设置",
-      "font_class": "setting1",
-      "unicode": "e644",
-      "unicode_decimal": 58948
+      "icon_id": "584065",
+      "name": "退出",
+      "font_class": "logout",
+      "unicode": "e659",
+      "unicode_decimal": 58969
     },
     {
       "icon_id": "836483",
@@ -83,18 +55,25 @@
       "unicode_decimal": 59062
     },
     {
-      "icon_id": "6986754",
-      "name": "dashboard",
-      "font_class": "dashboard1",
-      "unicode": "e88b",
-      "unicode_decimal": 59531
-    },
-    {
       "icon_id": "1294069",
       "name": "设置",
       "font_class": "setting",
       "unicode": "e61f",
       "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "1311996",
+      "name": "设置",
+      "font_class": "setting1",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "1336403",
+      "name": "列表",
+      "font_class": "plus-listview",
+      "unicode": "e72a",
+      "unicode_decimal": 59178
     },
     {
       "icon_id": "3248639",
@@ -111,6 +90,34 @@
       "unicode_decimal": 58922
     },
     {
+      "icon_id": "4631594",
+      "name": "修改密码",
+      "font_class": "change",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "5776870",
+      "name": "edit",
+      "font_class": "edit",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "6986754",
+      "name": "dashboard",
+      "font_class": "dashboard1",
+      "unicode": "e88b",
+      "unicode_decimal": 59531
+    },
+    {
+      "icon_id": "7155218",
+      "name": "菜单",
+      "font_class": "menu",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
       "icon_id": "7391802",
       "name": "角色设置",
       "font_class": "jiaoseshezhi-",
@@ -125,11 +132,32 @@
       "unicode_decimal": 58891
     },
     {
-      "icon_id": "7155218",
-      "name": "菜单",
-      "font_class": "menu",
-      "unicode": "e64f",
-      "unicode_decimal": 58959
+      "icon_id": "10204833",
+      "name": "disable",
+      "font_class": "disable",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "11520228",
+      "name": "接口",
+      "font_class": "resources",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "11810481",
+      "name": "语言",
+      "font_class": "globalization",
+      "unicode": "e685",
+      "unicode_decimal": 59013
+    },
+    {
+      "icon_id": "13087865",
+      "name": "click",
+      "font_class": "click",
+      "unicode": "e7cd",
+      "unicode_decimal": 59341
     }
   ]
 }

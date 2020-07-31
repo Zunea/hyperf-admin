@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import { login } from '@/api/default/auth'
-import { getInfo, getOption /* , logout */ } from '@/api/default/account'
-import { ACCESS_TOKEN } from '@/configs/constants'
+import { changePassword, getInfo, getOption /* , logout */ } from '@/api/default/account'
+import { ACCESS_TOKEN } from '@/config/constants'
 
 const user = {
     state: {
@@ -78,6 +78,16 @@ const user = {
                 getOption().then((response) => {
                     const result = response.result || {}
                     commit('SET_OPTIONS', result)
+                    resolve(response)
+                }).catch((error) => {
+                    reject(error)
+                })
+            })
+        },
+        // 修改密码
+        ChangePassword ({ commit }, data) {
+            return new Promise((resolve, reject) => {
+                changePassword(data).then((response) => {
                     resolve(response)
                 }).catch((error) => {
                     reject(error)

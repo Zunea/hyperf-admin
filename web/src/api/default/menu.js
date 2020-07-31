@@ -2,7 +2,7 @@ import { axios } from '@/utils/request'
 
 export function getMenu (params) {
     return axios({
-        url: 'menu',
+        url: 'admin/menu',
         method: 'get',
         params
     })
@@ -10,7 +10,7 @@ export function getMenu (params) {
 
 export function addMenu (data) {
     return axios({
-        url: 'menu',
+        url: 'admin/menu',
         method: 'post',
         data
     })
@@ -18,7 +18,7 @@ export function addMenu (data) {
 
 export function updateMenu (id, data) {
     return axios({
-        url: `menu/${id}`,
+        url: `admin/menu/${id}`,
         method: 'put',
         data
     })
@@ -26,7 +26,7 @@ export function updateMenu (id, data) {
 
 export function delMenu (id) {
     return axios({
-        url: `menu/${id}`,
+        url: `admin/menu/${id}`,
         method: 'delete'
     })
 }

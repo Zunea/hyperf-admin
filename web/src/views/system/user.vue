@@ -80,7 +80,7 @@
     import SearchForm from '@/components/SearchForm'
     import { getUser, delUser } from '@/api/default/user'
     import FormModal from '@/components/user/FormModal'
-    import { PAGES_SIZE } from '@/configs/constants'
+    import { PAGES_SIZE } from '@/config/constants'
 
     export default {
         name: 'user',

@@ -2,7 +2,7 @@ import { axios } from '@/utils/request'
 
 export function getUser (params) {
     return axios({
-        url: 'user',
+        url: 'admin/user',
         method: 'get',
         params
     })
@@ -10,7 +10,7 @@ export function getUser (params) {
 
 export function addUser (data) {
     return axios({
-        url: 'user',
+        url: 'admin/user',
         method: 'post',
         data
     })
@@ -18,7 +18,7 @@ export function addUser (data) {
 
 export function updateUser (id, data) {
     return axios({
-        url: `user/${id}`,
+        url: `admin/user/${id}`,
         method: 'put',
         data
     })
@@ -26,7 +26,7 @@ export function updateUser (id, data) {
 
 export function delUser (id) {
     return axios({
-        url: `user/${id}`,
+        url: `admin/user/${id}`,
         method: 'delete'
     })
 }

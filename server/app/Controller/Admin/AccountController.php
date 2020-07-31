@@ -11,12 +11,14 @@ namespace App\Controller\Admin;
 
 use App\Controller\AbstractController;
 use App\Kernel\Utils\JwtInstance;
+use App\Request\Account\ChangePasswordRequest;
 use App\Service\UserService;
 
 use Hyperf\Di\Annotation\Inject;
 use Hyperf\HttpServer\Annotation\Controller;
 use Hyperf\HttpServer\Annotation\GetMapping;
 use Hyperf\HttpServer\Annotation\PostMapping;
+use Hyperf\HttpServer\Annotation\PutMapping;
 
 /**
  * 获取账户信息
@@ -86,5 +88,25 @@ class AccountController extends AbstractController
         $result = $this->userService->getOptions();
 
         $this->success($result);
+    }
+
+    /**
+     * 修改密码
+     *
+     * @PutMapping(path="password")
+     * @param ChangePasswordRequest $request
+     */
+    public function password(ChangePasswordRequest $request)
+    {
+        $user = JwtInstance::instance()->build()->getUser();
+        if (!password_verify($request->post('old_password'), $user->password)) {
+            $this->formError([
+                'old_password' => 'logic.PASSWORD_ERROR'
+            ]);
+        }
+        $user->password = $request->post('new_password');
+        $user->save();
+
+        $this->success();
     }
 }

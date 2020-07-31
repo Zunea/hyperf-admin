@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueI18n from 'vue-i18n'
 import { axios } from '@/utils/request'
 import Storage from 'vue-ls'
-import { LANG } from '@/configs/constants'
+import { LANG } from '@/config/constants'
 
 // 简体中文
 import zhCN from './lang/zh-CN'

@@ -81,7 +81,7 @@
     import SearchForm from '@/components/SearchForm'
     import { getConfig, deleteConfig, enableConfig, disableConfig } from '@/api/default/config'
     import FormModal from '@/components/config/FormModal'
-    import { PAGES_SIZE } from '@/configs/constants'
+    import { PAGES_SIZE } from '@/config/constants'
 
     export default {
         name: 'config',

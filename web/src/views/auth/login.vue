@@ -37,8 +37,6 @@
                     setTimeout(() => {
                         location.href = '/'
                     }, 500)
-                }).catch((e) => {
-                    console.log(e)
                 }).finally(() => {
                     this.loginBtnLoading = false
                 })

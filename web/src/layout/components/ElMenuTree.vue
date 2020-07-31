@@ -7,7 +7,7 @@
                     <span slot="title">{{ $i18n.t('menu.' + menu.name) }}</span>
                 </template>
                 <label>
-                    <menu-tree :data="menu.children"></menu-tree>
+                    <el-menu-tree :data="menu.children"></el-menu-tree>
                 </label>
             </el-submenu>
             <el-menu-item v-else :index="menu.path" :key="index">
@@ -19,12 +19,12 @@
 </template>
 
 <script>
-    import MenuTree from './MenuTree'
+    import ElMenuTree from './ElMenuTree'
 
     export default {
-        name: 'MenuTree',
+        name: 'ElMenuTree',
         components: {
-            MenuTree
+            ElMenuTree
         },
         props: ['data']
     }

@@ -1,5 +1,6 @@
 export default {
     menu: {
+        index: '首页',
         DASHBOARD: '控制台',
         workplace: '工作台',
         workplace2: '工作台2',
@@ -161,5 +162,9 @@ export default {
     VERTICAL_HEIGHT: '竖向模式高度',
     SHOW_ALPHA: '显示透明度',
     COLOR_FORMAT: '颜色格式',
-    CONFIG_SUBMIT_TIP: '本次修改可能会清空现有配置值'
+    CONFIG_SUBMIT_TIP: '本次修改可能会清空现有配置值',
+    NO_DATA: '没有数据',
+    OLD_PASSWORD: '旧密码',
+    NEW_PASSWORD: '新密码',
+    CONFIRM_NEW_PASSWORD: '确认新密码'
 }

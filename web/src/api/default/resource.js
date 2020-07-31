@@ -2,7 +2,7 @@ import { axios } from '@/utils/request'
 
 export function getResource (params) {
     return axios({
-        url: 'resource',
+        url: 'admin/resource',
         method: 'get',
         params
     })
@@ -10,7 +10,7 @@ export function getResource (params) {
 
 export function addResource (data) {
     return axios({
-        url: 'resource',
+        url: 'admin/resource',
         method: 'post',
         data
     })
@@ -18,7 +18,7 @@ export function addResource (data) {
 
 export function updateResource (id, data) {
     return axios({
-        url: `resource/${id}`,
+        url: `admin/resource/${id}`,
         method: 'put',
         data
     })
@@ -26,7 +26,7 @@ export function updateResource (id, data) {
 
 export function delResource (id) {
     return axios({
-        url: `resource/${id}`,
+        url: `admin/resource/${id}`,
         method: 'delete'
     })
 }

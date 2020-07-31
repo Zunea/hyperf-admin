@@ -2,7 +2,7 @@ import { axios } from '@/utils/request'
 
 export function getGroup (params) {
     return axios({
-        url: 'group',
+        url: 'admin/group',
         method: 'get',
         params
     })
@@ -10,7 +10,7 @@ export function getGroup (params) {
 
 export function addGroup (data) {
     return axios({
-        url: 'group',
+        url: 'admin/group',
         method: 'post',
         data
     })
@@ -18,7 +18,7 @@ export function addGroup (data) {
 
 export function updateGroup (id, data) {
     return axios({
-        url: `group/${id}`,
+        url: `admin/group/${id}`,
         method: 'put',
         data
     })
@@ -26,14 +26,14 @@ export function updateGroup (id, data) {
 
 export function delGroup (id) {
     return axios({
-        url: `group/${id}`,
+        url: `admin/group/${id}`,
         method: 'delete'
     })
 }
 
 export function updateGroupMenu (id, data) {
     return axios({
-        url: `group/menu/${id}`,
+        url: `admin/group/menu/${id}`,
         method: 'put',
         data
     })
@@ -41,7 +41,7 @@ export function updateGroupMenu (id, data) {
 
 export function updateGroupResource (id, data) {
     return axios({
-        url: `group/resource/${id}`,
+        url: `admin/group/resource/${id}`,
         method: 'put',
         data
     })

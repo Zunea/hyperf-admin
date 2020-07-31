@@ -76,7 +76,7 @@
     import SearchForm from '@/components/SearchForm'
     import { getResource, delResource } from '@/api/default/resource'
     import FormModal from '@/components/resource/FormModal'
-    import { PAGES_SIZE } from '@/configs/constants'
+    import { PAGES_SIZE } from '@/config/constants'
 
     export default {
         name: 'resource',

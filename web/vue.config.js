@@ -34,6 +34,13 @@ module.exports = {
 
     devServer: {
         port: 8088,
+        open: true,
+        proxy: {
+            '/dev-api': {
+                target: 'https://www.fastmock.site/mock/8b8187de5502cc6a522b78638621c2c4/HuiAdmin/',
+                pathRewrite: { '^/dev-api': '' }
+            }
+        }
     }, // 第三方插件配置
 
     pluginOptions: {

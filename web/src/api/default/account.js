@@ -3,7 +3,7 @@ import { axios } from '@/utils/request'
 // 获取用户信息接口
 export function getInfo () {
     return axios({
-        url: 'account/info',
+        url: 'admin/account/info',
         method: 'get'
     })
 }
@@ -11,7 +11,7 @@ export function getInfo () {
 // 获取菜单接口
 export function getMenu () {
     return axios({
-        url: 'account/menu',
+        url: 'admin/account/menu',
         method: 'get'
     })
 }
@@ -19,7 +19,7 @@ export function getMenu () {
 // 退出接口
 export function logout () {
     return axios({
-        url: 'account/logout',
+        url: 'admin/account/logout',
         method: 'post'
     })
 }
@@ -27,7 +27,16 @@ export function logout () {
 // 获取选项接口
 export function getOption () {
     return axios({
-        url: 'account/option',
+        url: 'admin/account/option',
         method: 'get'
+    })
+}
+
+// 修改密码接口
+export function changePassword (data) {
+    return axios({
+        url: 'admin/account/password',
+        method: 'put',
+        data
     })
 }

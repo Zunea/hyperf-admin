@@ -49,7 +49,7 @@ class ResourceController extends AbstractController
     }
 
     /**
-     * 创建后台菜单接口
+     * 创建后台资源接口
      *
      * @PostMapping(path="")
      * @param ResourceRequest $request
@@ -64,7 +64,7 @@ class ResourceController extends AbstractController
     }
 
     /**
-     * 修改后台用户接口
+     * 修改后台资源接口
      *
      * @PutMapping(path="{id}")
      * @param int $id
@@ -80,7 +80,7 @@ class ResourceController extends AbstractController
     }
 
     /**
-     * 删除用户组
+     * 删除资源
      *
      * @DeleteMapping(path="{id}")
      * @param int $id

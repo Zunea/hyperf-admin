@@ -78,5 +78,12 @@ return [
             'tips'   => ['max' => $max],
             'format' => ['max' => $max],
         ]
+    ],
+    'Account'   => [
+        'ChangePasswordRequest' => [
+            'old_password'              => ['required' => $required_input, 'alpha_dash' => 'format error', 'between' => 'format error [:between length]'],
+            'new_password'              => ['required' => $required_input, 'alpha_dash' => 'format error', 'between' => 'format error[:between length]', 'confirmed' => 'Must be consistent'],
+            'new_password_confirmation' => ['required' => $required_input],
+        ]
     ]
 ];

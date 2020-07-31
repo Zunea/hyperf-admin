@@ -7,9 +7,10 @@ import {
     AUTHORIZATION,
     LANG,
     EXCHANGE_TOKEN
-} from '@/configs/constants'
+} from '@/config/constants'
 
 const service = axios.create({
+    // eslint-disable-next-line no-undef
     baseURL: process.env.VUE_APP_API_BASE_URL,
     timeout: 6000 // 请求超时时间
 })

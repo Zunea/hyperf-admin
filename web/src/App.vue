@@ -5,8 +5,15 @@
 </template>
 
 <script>
+    import {
+        DEFAULT_MULTI_TAB,
+        DEFAULT_THEME_TYPE
+    } from '@/config/constants'
     export default {
-        name: 'Zunea'
+        created () {
+            this.$store.dispatch('ToggleMultiTab', this.$ls.get(DEFAULT_MULTI_TAB))
+            this.$store.dispatch('ToggleThemeType', this.$ls.get(DEFAULT_THEME_TYPE))
+        }
     }
 </script>
 
@@ -16,7 +23,6 @@
     }
     // 表格样式
     .table-body {
-        margin-top: 20px;
         // 表格左上角
         .table-left-top {
             width: 100%;

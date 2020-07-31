@@ -1,5 +1,5 @@
-import BasicLayout from '@/layouts/BasicLayout'
-import UserLayout from '@/layouts/UserLayout'
+import BasicLayout from '@/layout/BasicLayout'
+import UserLayout from '@/layout/UserLayout'
 
 /**
  * 基础路由
@@ -15,7 +15,7 @@ export const constantRouterMap = [
             {
                 path: 'login',
                 name: 'login',
-                component: () => import('@/views/auth/login')
+                component: () => import('@/views/login/login')
             }
         ]
     },
