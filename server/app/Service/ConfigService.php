@@ -94,6 +94,18 @@ class ConfigService extends Base
     }
 
     /**
+     * 初始化配置
+     */
+    public function initConfigs()
+    {
+        try {
+            $this->cache->delete(self::CACHE_NAME);
+        } catch (InvalidArgumentException $e) {
+        }
+        $this->getConfigs();
+    }
+
+    /**
      * 全部配置列表
      *
      * @return array
