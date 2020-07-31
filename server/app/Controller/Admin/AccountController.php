@@ -107,6 +107,9 @@ class AccountController extends AbstractController
         $user->password = $request->post('new_password');
         $user->save();
 
+        // 清理缓存
+        $this->flushCache('UpdateAdminUser', [$user->id]);
+
         $this->success();
     }
 }

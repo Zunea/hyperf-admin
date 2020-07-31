@@ -31,7 +31,7 @@ class AdminUserDAO extends Base
     /**
      * 通过ID获取用户
      *
-     * @Cacheable(prefix="AdminUser", ttl=3600)
+     * @Cacheable(prefix="AdminUser", ttl=3600, listener="UpdateAdminUser")
      * @param int $id
      * @return mixed
      */
