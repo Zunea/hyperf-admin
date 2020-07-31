@@ -18,6 +18,22 @@
         <!--头部右边-->
         <div class="header_right flexR">
             <span>
+                <!--<el-dropdown trigger="click" placement="bottom" @command="handleLangCommand">
+                    <span class="el-dropdown-link" style="font-size: 14px;cursor: pointer;"><i class="el-icon-custom-globalization"></i>&nbsp;{{ $i18n.t('LANGUAGE') }}</span>
+                    <el-dropdown-menu slot="dropdown">
+                        <el-dropdown-item command="zh_CN">🇨🇳 简体中文</el-dropdown-item>
+                        <el-dropdown-item command="en_US">🇬🇧 English</el-dropdown-item>
+                    </el-dropdown-menu>
+                </el-dropdown>-->
+                <Dropdown @on-click="handleLangCommand">
+                    <span class="el-dropdown-link" style="font-size: 14px;cursor: pointer;"><i class="el-icon-custom-globalization"></i>&nbsp;{{ $i18n.t('LANGUAGE') }}</span>
+                    <DropdownMenu slot="list">
+                        <DropdownItem name="zh_CN">🇨🇳 简体中文</DropdownItem>
+                        <DropdownItem name="en_US">🇬🇧 English</DropdownItem>
+                    </DropdownMenu>
+                </Dropdown>
+            </span>
+            <span>
                 <Icon :type="isMaxWindow ? 'md-contract' : 'md-expand'" @click="maxWindow" size="18"/>
             </span>
             <!--<span>
@@ -117,6 +133,10 @@
                         }).catch(e => {})
                     }).catch(e => {})
                 }
+            },
+            handleLangCommand (lang) {
+                this.$store.dispatch('SetLang', lang)
+                this.$store.dispatch('GetOptions')
             }
         }
     }
