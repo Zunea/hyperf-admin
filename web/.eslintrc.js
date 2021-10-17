@@ -50,12 +50,5 @@ module.exports = {
         'vue/no-parsing-error': [2, { "x-invalid-end-tag": false }]
     },
     "overrides": [
-        {
-            "files": ["*.vue"],
-            "rules": {
-                "indent": "off",
-                "vue/script-indent": ["error", 4, {"baseIndent": 1}]
-            }
-        }
     ]
 }
